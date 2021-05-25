@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'companies#new'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'companies#index'
+  resources :companies, only: [:new, :create, :index]
 end
