@@ -1,5 +1,22 @@
+<div class='chat-room-form'>
+  <h1>顧客情報管理</h1>
+  <%=form_with model: '#' , local: true do |f|%>
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :企業名登録, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :company_name, class: 'chat__room_name chat-room-form__input', placeholder: '企業名を入力' %>
+      </div>
+    </div>
+    <div class='chat-room-form__field'>
+    </div>
 
-<h2> 請求書作成アプリ</h2>
-請求先企業入力
-
-<%= text_field_tag "company_name", "企業名" %>
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'></div>
+      <div class='chat-room-form__field--right'>
+        <%= f.submit class: 'chat-room-form__action-btn'%>
+      </div>
+    </div>
+  <% end %>
+</div>
