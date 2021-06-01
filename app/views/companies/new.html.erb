@@ -1,0 +1,54 @@
+<div class='chat-room-form'>
+  <h1>顧客情報登録</h1>
+  <%= form_with model: @company, local: true do |f| %>
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :企業名登録, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :company_name, class: 'chat__room_name chat-room-form__input', placeholder: '企業名を入力' %>
+      </div>
+
+      <div class='chat-room-form__field--left'>
+        <%= f.label :代表者名, class: 'chat-room-form__label'%>
+      </div>
+      
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :president_name, class: 'chat__room_name chat-room-form__input', placeholder: '代表者名入力' %>
+      </div>
+
+      <div class='chat-room-form__field--left'>
+        <%= f.label :郵便番号, class: 'chat-room-form__label'%>
+      </div>
+
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :postal_code, class: 'chat__room_name chat-room-form__input', placeholder: '郵便番号入力' %>
+      </div>
+
+      <div class='chat-room-form__field--left'>
+        <%= f.label :住所, class: 'chat-room-form__label'%>
+      </div>
+      
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :addresses, class: 'chat__room_name chat-room-form__input', placeholder: '住所入力' %>
+      </div>
+
+      <div class='chat-room-form__field--left'>
+        <%= f.label :電話番号, class: 'chat-room-form__label'%>
+      </div>
+      
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :phone_number, class: 'chat__room_name chat-room-form__input', placeholder: '電話番号入力' %>
+      </div>
+    </div>
+    <div class='chat-room-form__field'>
+    </div>
+
+    <div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'></div>
+      <div class='chat-room-form__field--right'>
+        <%= f.submit class: 'chat-room-form__action-btn'%>
+      </div>
+    </div>
+  <% end %>
+</div>
