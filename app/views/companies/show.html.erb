@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="side-bar">
+    <%= render "side_bar" %>
+  </div>
+  <div class="chat">
+    <%= render "main_chat" %>
+    <div class="message" >
+      <div class="messages" >
+       <h2>顧客情報</h2>
+        <div class="show_box">
+           企業名：<%= @company.company_name %>
+        </div>
+        
+        <div class="show_box">
+          代表者名：<%= @company.president_name %>
+        </div>
+
+        <div class="show_box">
+          郵便番号：<%= @company.postal_code %>
+        </div>
+
+        <div class="show_box">
+          住所：<%= @company.addresses %>
+        </div>
+
+        <div class="show_box">
+          電話番号：<%= @company.phone_number %>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>

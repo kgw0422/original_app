@@ -1,13 +1,8 @@
 <div class="chat-header">
   <div class="right-button">
     <div class="header-button">
-      <%= link_to "企業を登録する", new_company_path %>
-      <%= link_to "顧客情報を修正する", '#', method: :edit %>
-      <%= link_to "請求書を作成する", '#', method: :delete %>
+      <%= link_to "新規登録", new_company_path %>
+      <%= link_to "請求書作成", '#', method: :delete %>
     </div>
   </div>
-</div>
-
-<div class="messages">
-  <%= render partial: 'company_info' %>
 </div>

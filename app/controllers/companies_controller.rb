@@ -17,6 +17,11 @@ class CompaniesController < ApplicationController
     end
   end
 
+  def show
+    @info = Company.all
+    @company = Company.find(params[:id])
+  end
+
   private
 
   def company_params

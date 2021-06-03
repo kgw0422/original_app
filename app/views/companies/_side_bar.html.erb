@@ -10,7 +10,7 @@
   <% @info.each do |company| %>
     <div class="room">
       <div class="room-name">
-         <%= link_to company.company_name, root_path %>
+         <%= link_to company.company_name, company_path(company.id) %>
       </div>
     </div>
   <% end %>
